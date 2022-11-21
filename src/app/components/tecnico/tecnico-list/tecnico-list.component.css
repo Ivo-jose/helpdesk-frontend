@@ -1,8 +1,16 @@
 .container {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
 }
 
-table {
+.full-width {
     width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 1.1rem 0;
 }

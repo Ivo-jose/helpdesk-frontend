@@ -1,6 +1,16 @@
 <div class="container">
+
+  <h1>Listando Técnicos</h1>
+
+  <button  mat-stroked-button color="primary" class="mat-elevation-z8 full-width">Novo Tecnico</button>
+
+  <mat-form-field class="full-width" appearance="standard">
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+  </mat-form-field>
+
     <div class="mat-elevation-z8">
-        <table mat-table [dataSource]="dataSource">
+        <table class="full-width" mat-table [dataSource]="dataSource">
       
           <!-- Id Column -->
           <ng-container matColumnDef="id">
