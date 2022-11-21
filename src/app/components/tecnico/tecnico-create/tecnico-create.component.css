@@ -22,7 +22,7 @@ img {
 .section {
     margin: 1rem 0 1rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 mat-form-field {
@@ -37,4 +37,8 @@ p {
     margin-top: 1.8rem;
     text-align: end;
     opacity: 0.4;
-}    
+}
+
+mat-icon {
+    opacity: 0.6;
+}
