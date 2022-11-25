@@ -10,9 +10,9 @@
   </mat-form-field>
   
   <mat-radio-group color="primary">
-    <mat-radio-button  value="aberto">ABERTO</mat-radio-button>
-    <mat-radio-button  value="andamento">ANDAMENTO</mat-radio-button>
-    <mat-radio-button  value="encerrado">ENCERRADO</mat-radio-button>
+    <mat-radio-button (click)="orderByStatus(0)" value="aberto">ABERTO</mat-radio-button>
+    <mat-radio-button (click)="orderByStatus(1)" value="andamento">ANDAMENTO</mat-radio-button>
+    <mat-radio-button (click)="orderByStatus(2)" value="encerrado">ENCERRADO</mat-radio-button>
   </mat-radio-group>
 
   <div class="mat-elevation-z8">
@@ -51,13 +51,13 @@
           <!-- Priority column -->
           <ng-container matColumnDef="prioridade">
             <th mat-header-cell *matHeaderCellDef> Prioridade </th>
-            <td mat-cell *matCellDef="let element"> {{element.prioridade}} </td>
+            <td mat-cell *matCellDef="let element"> {{retornaPrioridade(element.prioridade)}} </td>
           </ng-container>
 
           <!-- Status column -->
           <ng-container matColumnDef="status">
             <th mat-header-cell *matHeaderCellDef> Status </th>
-            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+            <td mat-cell *matCellDef="let element"> {{retornaStatus(element.status)}} </td>
           </ng-container>
   
           <!-- Actioin Column -->
@@ -77,7 +77,7 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
         
-    <mat-paginator [pageSizeOptions]="[4, 5, 10, 20]"
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
                          showFirstLastButtons 
                          aria-label="Select page of periodic elements">
     </mat-paginator>
