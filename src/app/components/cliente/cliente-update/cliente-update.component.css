@@ -1,0 +1,44 @@
+.container {
+    width: 32.3rem;
+    margin:0 auto 5rem auto;
+    padding: 1rem 1rem .1rem 1rem;
+    border-radius: .6rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    height: 8rem;
+    margin: auto;
+
+}
+
+.section {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-form-field {
+    margin: .2rem 0;
+}
+
+button {
+    margin-top: .6rem;
+}
+
+p {
+    margin-top: 1.8rem;
+    text-align: end;
+    opacity: 0.4;
+}
+
+mat-icon {
+    opacity: 0.6;
+}
