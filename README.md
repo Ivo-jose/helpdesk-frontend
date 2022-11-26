@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run  for a dev server. Navigate to `https://helpdesk-frontend-three.vercel.app/`. The application will automatically reload if you change any of the source files.\
+Access data are\:
+**Email**: ivojose@mail.com\
+**Password**: 123
+
 
 ## Code scaffolding
 
