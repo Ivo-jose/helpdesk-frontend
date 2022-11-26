@@ -7,7 +7,6 @@ import { FormControl, Validators } from '@angular/forms';
 import { Cliente } from 'src/app/models/cliente';
 import { Tecnico } from 'src/app/models/tecnico';
 import { Chamado } from 'src/app/models/chamado';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
