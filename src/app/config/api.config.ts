@@ -1,3 +1,3 @@
 export const API_CONFIG = {
-    baseUrl: 'https://helpdeskapi-prod.herokuapp.com'
+    baseUrl: 'https://helpdesk-api-production.up.railway.app'
 }
